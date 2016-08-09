@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
             message = "Perfect, you got it!";
         } else if (guessedNumberInt > randomNumber) {
             message = "A little too high";
-        } else {
+        } else if (guessedNumberInt < randomNumber) {
             message = "Too low";
+        } else {
+            message = "Please enter a number";
         }
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 
