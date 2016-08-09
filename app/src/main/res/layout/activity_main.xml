@@ -12,8 +12,36 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I have a random number"
+        android:text="I have a random number between 0 and 20"
         android:id="@+id/infoText"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can you guess?"
+        android:id="@+id/guessText"
+        android:layout_below="@+id/infoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberTextField"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you right?"
+        android:id="@+id/guessButton"
+        android:layout_below="@+id/numberTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
 </RelativeLayout>
